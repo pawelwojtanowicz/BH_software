@@ -1,0 +1,212 @@
+
+var beamType;
+function setBeamType() {
+
+    if (document.getElementById("beam_BHM").checked) {
+        beamType = document.getElementById("beam_BHM").value;
+    } else if(document.getElementById("beam_BHMd").checked) {
+        beamType = document.getElementById("beam_BHMd").value;
+    } else if(document.getElementById("beam_BHR").checked) {
+        beamType = document.getElementById("beam_BHR").value;
+    } else {
+        beamType = null;
+    }
+}
+
+
+
+function add() {
+    var hs1 = document.getElementById("hs1").value;
+    var hs2 = document.getElementById("hs2").value;
+    var x;
+        hs1 = parseFloat(hs1);
+        hs2 = parseFloat(hs2);
+        console.log(hs1);
+        console.log(hs2);
+        console.log(typeof hs1);
+        console.log(hs1 + hs2);
+        x = hs1 + hs2;
+        alert("Your result is: " + x);
+}
+
+function add1() {
+    var hs1 = document.getElementById("hs1").value;
+    var hs2 = document.getElementById("hs2").value;
+    var x;
+        hs1 = parseFloat(hs1);
+        hs2 = parseFloat(hs2);
+        console.log(hs1);
+        console.log(hs2);
+        console.log(typeof hs1);
+        console.log(hs1 + hs2);
+        x = hs1 + hs2;
+        document.getElementById('add').innerHTML=x;
+}
+
+function multiply() {
+    var hs1 = document.getElementById("hs1").value;
+    var hs2 = document.getElementById("hs2").value;
+    var x;
+        hs1 = parseFloat(hs1);
+        hs2 = parseFloat(hs2);
+        console.log(hs1);
+        console.log(hs2);
+        console.log(typeof hs1);
+        console.log(hs1 * hs2);
+        x = hs1 * hs2;
+        alert("Your result is: " + x);
+}
+
+function multiply1() {
+    var hs1 = document.getElementById("hs1").value;
+    var hs2 = document.getElementById("hs2").value;
+    var x;
+        hs1 = parseFloat(hs1);
+        hs2 = parseFloat(hs2);
+        console.log(hs1);
+        console.log(hs2);
+        console.log(typeof hs1);
+        console.log(hs1 * hs2);
+        x = hs1 * hs2;
+        document.getElementById('add').innerHTML=x;
+}
+
+
+function divide() {
+    var hs1 = document.getElementById("hs1").value;
+    var hs2 = document.getElementById("hs2").value;
+    var x;
+        hs1 = parseFloat(hs1);
+        hs2 = parseFloat(hs2);
+        console.log(hs1);
+        console.log(hs2);
+        console.log(typeof hs1);
+        console.log(hs1 / hs2);
+        x = hs1 / hs2;
+        alert("Your result is: " + x);
+}
+
+function divide1() {
+    var hs1 = document.getElementById("hs1").value;
+    var hs2 = document.getElementById("hs2").value;
+    var x;
+        hs1 = parseFloat(hs1);
+        hs2 = parseFloat(hs2);
+        console.log(hs1);
+        console.log(hs2);
+        console.log(typeof hs1);
+        console.log(hs1 / hs2);
+        x = hs1 / hs2;
+        document.getElementById('add').innerHTML=x;
+}
+
+function setBeamType2() {
+
+    if (document.getElementById("beam_BHM").checked) {
+        add();
+    } else if(document.getElementById("beam_BHMd").checked) {
+        multiplication();
+    } else if(document.getElementById("beam_BHR").checked) {
+        divison();
+    } else {
+        alert("Choose the beam type motherfucker");
+    }
+}
+
+function setBeamType3() {
+
+    if (document.getElementById("beam_BHM").checked) {
+        add1();
+    } else if(document.getElementById("beam_BHMd").checked) {
+        multiplication1();
+    } else if(document.getElementById("beam_BHR").checked) {
+        divison1();
+    } else {
+        alert("Choose the beam type motherfucker");
+    }
+}
+
+function calculate() {
+    var button = document.getElementById("calculate")
+    button.addEventListener("click", function() {
+        alert('it works');
+    })
+}
+
+function calculate1() {
+    var button = document.getElementById("pdf")
+    button.addEventListener("click", function() {
+        alert(document.getElementById("lbh").value);
+    })
+}
+
+function calculate2() {
+    var button = document.getElementById("clear_data")
+    button.addEventListener("click", function() {
+        alert('LBH=' + document.getElementById("lbh").value);
+    })
+}
+
+
+function calculate3() {
+    var button = document.getElementById("test_1");
+    button.addEventListener("click", function() {
+        setBeamType();
+        alert(y);
+
+    })
+}
+
+function calculate4() {
+    var button = document.getElementById("test_2");
+    button.addEventListener("click", function() {
+        console.log('hs1=' + document.getElementById("hs1").value + ', hs2=' + document.getElementById("hs1").value)
+    })
+}
+
+
+function calculate5() {
+    var button = document.getElementById("test_3");
+    button.addEventListener("click", function() {
+        var hs1 = document.getElementById("hs1").value;
+        var hs2 = document.getElementById("hs2").value;
+        hs1 = parseFloat(hs1);
+        hs2 = parseFloat(hs2);
+        console.log(hs1);
+        console.log(hs2);
+        console.log(typeof hs1);
+        console.log(hs1 + hs2);
+    })
+}
+
+function calculate6() {
+    var button = document.getElementById("test_4");
+    button.addEventListener("click", function() {
+        setBeamType2(); 
+
+    })
+}
+
+function calculate7() {
+    var button = document.getElementById("test_5");
+    button.addEventListener("click", function() {
+        setBeamType3(); 
+
+    })
+}
+
+window.onload = function() {
+    calculate()
+    calculate1()
+    calculate2()
+    calculate3()
+    calculate4()
+    calculate5()
+    calculate6()
+    calculate7()
+    beam_type()
+
+
+}
+
+

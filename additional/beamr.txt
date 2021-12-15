@@ -1,0 +1,129 @@
+var beamr = [
+	{
+		name: 		"BHR 20-200",
+		weight: 	2.41,
+		bending moment: 329.08,
+		shear:		469.57
+	},
+
+	{
+		name: 		"BHR 20-250",
+		weight: 	2.83,
+		bending moment: 409.61,
+		shear:		469.57
+	},
+
+	{
+		name: 		"BHR 20-300",
+		weight: 	3.24,
+		bending moment: 488.57,
+		shear:		469.57
+	},
+
+	{
+		name: 		"BHR 27-300",
+		weight: 	4.34,
+		bending moment: 893.23,
+		shear:		597.63
+	},
+
+	{
+		name: 		"BHR 27-350",
+		weight: 	4.91,
+		bending moment: 1021.13,
+		shear:		597.63
+	},
+
+	{
+		name: 		"BHR 27-400",
+		weight: 	5.56,
+		bending moment: 1173.53,
+		shear:		597.63
+	},
+
+	{
+		name: 		"BHR 32-350",
+		weight: 	5.83,
+		bending moment: 1392.11,
+		shear:		1013.84
+	},
+
+	{
+		name: 		"BHR 32-400",
+		weight: 	6.87,
+		bending moment: 1522.86,
+		shear:		1013.84
+	},
+
+	{
+		name: 		"BHR 32-450",
+		weight: 	7.55,
+		bending moment: 1604.14,
+		shear:		1013.84
+	},
+
+	{
+		name: 		"BHR 40-400",
+		weight: 	8.45,
+		bending moment: 2231.48,
+		shear:		1253.96
+	},
+
+	{
+		name: 		"BHR 40-450",
+		weight: 	9.29,
+		bending moment: 2385.39,
+		shear:		1253.96
+	},
+
+	{
+		name: 		"BHR 40-500",
+		weight: 	10.26,
+		bending moment: 2935.60,
+		shear:		1504.75
+
+	},
+
+	{
+		name: 		"BHR 45-400",
+		weight: 	9.13,
+		bending moment: 2647.24,
+		shear:		1253.96
+	},
+
+	{
+		name: 		"BHR 45-450",
+		weight: 	10.68,
+		bending moment: 3019.53,
+		shear:		1664.83
+	},
+
+	{
+		name: 		"BHR 45-500",
+		weight: 	11.63,
+		bending moment: 3352.17,
+		shear:		1664.83
+	},
+
+	{
+		name: 		"BHR 50-500",
+		weight: 	12.53,
+		bending moment: 4022.49,
+		shear:		1824.91
+	},
+
+	{
+		name: 		"BHR 50-550",
+		weight: 	13.81,
+		bending moment: 4336.15,
+		shear:		2281.14
+	},
+
+	{
+		name: 		"BHR 50-650",
+		weight: 	15.86,
+		bending moment: 4926.79,
+		shear:		2281.14
+	},
+
+]

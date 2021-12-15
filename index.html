@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>PFEIFER Hybridbeam</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.10/css/all.css"
+      integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+      crossorigin="anonymous"
+    />
+
+    <script src="js/script.js" defer></script>
+    <script src="js/data.js" defer></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <p class="icon">
+        <i
+          class="fa fa-home"
+          style="font-size:35px;color:#000098;"
+          title="www.pfeifer.info"
+        ></i>
+        <i
+          class="fa fa-info-circle"
+          style="font-size:35px;color:#000098;"
+          title="Hybridbeam technical info"
+        ></i>
+        <i
+          class="fa fa-envelope"
+          style="font-size:35px;color:#000098;"
+          title="Contact"
+        ></i>
+      </p>
+
+      <p class="logo"><img src="img/logo.png" alt="Pfeifer_logo" /></p>
+    </header>
+
+    <h1>PFEIFER Hybridbeam Software</h1>
+
+    <div class="container_position">
+      <div class="data_position">
+        <div class="data-items-wrapper">
+          <div class="description_0">Project administration</div>
+          <div class="placement_position">
+            <div class="forms_position">
+              <p class="definition">Date</p>
+              <input
+                type="date"
+                id="date"
+                name="date"
+                style="width: 130px; height: 20px"
+                value="2019-01-01"
+              />
+            </div>
+
+            <div class="forms_position_1">
+              <p class="definition">Company</p>
+              <input
+                type="text"
+                id="company"
+                name="company"
+                style="width: 150px; height: 20px"
+                value="---"
+              />
+            </div>
+
+            <div class="forms_position_1">
+              <p class="definition">Responsible</p>
+              <input
+                type="text"
+                id="responsible"
+                name="responsible"
+                style="width: 150px; height: 20px"
+                value="---"
+              />
+            </div>
+
+            <div class="forms_position_1">
+              <p class="definition">Project name</p>
+              <input
+                type="text"
+                id="project_name"
+                name="project_name"
+                style="width: 150px; height: 20px"
+                value="---"
+              />
+            </div>
+
+            <div class="forms_position_1">
+              <p class="definition">Position</p>
+              <input
+                type="text"
+                id="position"
+                name="position"
+                style="width: 100px; height: 20px"
+                value="---"
+              />
+            </div>
+
+            <div class="forms_position_1">
+              <p class="definition">Number of position</p>
+              <input
+                type="number"
+                id="number_of_position"
+                name="number_of_position"
+                style="width: 50px; height: 20px;"
+                value=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container_data">
+      <div class="data">
+        <div id="data-general">
+          <div class="description_0">General data</div>
+
+          <div class="data-items-wrapper">
+            <div class="description">Type of the beam</div>
+
+            <div class="forms">
+              <input
+                type="radio"
+                value="BHM"
+                name="beam_choice"
+                id="beam_BHM"
+                checked="checked"
+              />
+              PFEIFER BHM [middle]
+            </div>
+
+            <div class="forms">
+              <input
+                type="radio"
+                value="BHMd"
+                name="beam_choice"
+                id="beam_BHMd"
+              />
+              PFEIFER BHM(d) [middle in expantion joint]
+            </div>
+
+            <div class="forms">
+              <input
+                type="radio"
+                value="BHR"
+                name="beam_choice"
+                id="beam_BHR"
+              />
+              PFEIFER BHR [edge]
+            </div>
+          </div>
+
+          <div class="data-items-wrapper">
+            <div class="description">Type of the slab</div>
+
+            <div class="forms">
+              <input
+                type="radio"
+                value="hollow-core slab"
+                name="slab_choice"
+                id="slab_HC"
+                checked="true"
+              />
+              hollow-core slab
+            </div>
+
+            <div class="forms">
+              <input
+                type="radio"
+                value="monolithic ceiling"
+                name="slab_choice"
+                id="slab_monolithic"
+              />
+              monolithic ceiling
+            </div>
+          </div>
+
+          <!--<div class="data-items-wrapper">
+                        <div class="description">Hollow-core slab producer</div>
+                        
+                        <div class="forms">
+                            <select name="producer" id="selector">
+                                <option value="not selected">―</option>
+                                <option value="Betard">Betard</option>
+                                <option value="Consolis">Consolis</option>
+                                <option value="Fabud WKB">Fabud WKB</option>
+                                <option value="Konbet">Konbet</option>
+                                <option value="Pekabex">Pekabex</option>
+                            </select>
+                        </div>
+                    </div>-->
+        </div>
+        <div id="data-dimension">
+          <div class="description_0">Dimension</div>
+
+          <div class="data-items-wrapper">
+            <div class="description">Span</div>
+
+            <div class="forms">
+              <p class="definition">L<sub>BH</sub></p>
+              <input
+                type="number"
+                id="lbh"
+                name="lbh"
+                style="width: 100px;"
+                value="8.00"
+              />
+              <p class="unit">[m]</p>
+            </div>
+
+            <div class="forms">
+              <p class="definition">L<sub>s1</sub></p>
+              <input
+                type="number"
+                id="ls1"
+                name="ls1"
+                style="width: 100px;"
+                value="6.00"
+                step="0.01"
+                min="0.00"
+              />
+              <p class="unit">[m]</p>
+            </div>
+
+            <div class="forms">
+              <p class="definition">L<sub>s2</sub></p>
+              <input
+                type="number"
+                id="ls2"
+                name="ls2"
+                style="width: 100px;"
+                value="6.00"
+              />
+              <p class="unit">[m]</p>
+            </div>
+          </div>
+
+          <div class="data-items-wrapper">
+            <div class="description">Height</div>
+
+            <div class="height-hc">
+              <div class="forms">
+                <p class="definition">h<sub>s1,HC</sub></p>
+                <select name="selector1" id="selector1" style="width: 100px;">
+                  <option value="HC150">HC150</option>
+                  <option value="HC160">HC160</option>
+                  <option value="HC200">HC200</option>
+                  <option value="HC265">HC265</option>
+                  <option value="HC320">HC320</option>
+                  <option value="HC400">HC400</option>
+                  <option value="HC500">HC500</option>
+                </select>
+                <p class="unit">[mm]</p>
+              </div>
+
+              <div class="forms">
+                <p class="definition">h<sub>s2,HC</sub></p>
+                <select name="selector2" id="selector2" style="width: 100px;">
+                  <option value="HC150">HC150</option>
+                  <option value="HC160">HC160</option>
+                  <option value="HC200">HC200</option>
+                  <option value="HC265">HC265</option>
+                  <option value="HC320">HC320</option>
+                  <option value="HC400">HC400</option>
+                  <option value="HC500">HC500</option>
+                </select>
+                <p class="unit">[mm]</p>
+              </div>
+            </div>
+
+            <div class="height-monolithic">
+              <div class="forms">
+                <p class="definition">h<sub>s1</sub></p>
+                <input
+                  type="number"
+                  id="hs1"
+                  name="hs1"
+                  style="width: 100px;"
+                  value="200"
+                />
+                <p class="unit">[mm]</p>
+              </div>
+
+              <div class="forms">
+                <p class="definition">h<sub>s2</sub></p>
+                <input
+                  type="number"
+                  id="hs2"
+                  name="hs2"
+                  style="width: 100px;"
+                  value="200"
+                />
+                <p class="unit">[mm]</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="data-load">
+          <div class="description_0">Load</div>
+
+          <div class="data-items-wrapper">
+            <div class="description">Partial safety factor acc. to</div>
+            <div class="forms">
+              <input
+                checked="true"
+                type="radio"
+                value="EC"
+                name="safety_factor_choice"
+                id="ec"
+              />
+              EC
+            </div>
+
+            <div class="forms">
+              <input
+                type="radio"
+                id="user"
+                value="user"
+                name="safety_factor_choice"
+              />
+              user
+            </div>
+
+            <!--
+
+<div class="forms">
+<input
+type="radio"
+value="BHM"
+name="beam_choice"
+id="beam_BHM"
+/>
+PFEIFER BHM [middle]
+</div>
+
+
+<div class="description_2">
+Partial safety factor acc. to
+</div>
+
+<div class="forms">
+<select name="safety_factor_choice">
+<option value="EC">EC</option>
+<option value="user">user</option>
+</select>
+</div>
+-->
+          </div>
+
+          <div class="data-items-wrapper">
+            <div class="description">Steady load</div>
+
+            <div class="forms">
+              <p class="definition">γ<sub>g</sub></p>
+              <input
+                type="number"
+                id="gammaG"
+                name="gamma_g"
+                style="width: 100px;"
+                value="1.35"
+              />
+              <p class="unit">[-]</p>
+            </div>
+
+            <div class="forms">
+              <p class="definition">g<sub>E,k</sub></p>
+              <input
+                type="number"
+                id="gEk"
+                name="gEk"
+                style="width: 100px;"
+                value="2.0"
+              />
+              <p class="unit">[kN/m<sup>2</sup>]</p>
+            </div>
+          </div>
+
+          <div class="data-items-wrapper">
+            <div class="description">Useful load</div>
+
+            <div class="forms">
+              <p class="definition">γ<sub>q</sub></p>
+              <input
+                type="number"
+                id="gammaQ"
+                name="gamma_q"
+                style="width: 100px;"
+                value="1.50"
+              />
+              <p class="unit">[-]</p>
+            </div>
+
+            <div class="forms">
+              <p class="definition">q<sub>E,k</sub></p>
+              <input
+                type="number"
+                id="qEk"
+                name="qEk"
+                style="width: 100px;"
+                value="5.0"
+              />
+              <p class="unit">[kN/m<sup>2</sup>]</p>
+            </div>
+          </div>
+
+          <div class="data-items-wrapper">
+            <div class="description">Dead load</div>
+
+            <div class="forms">
+              <p class="definition">γ<sub>d</sub></p>
+              <input
+                type="number"
+                id="gammaD"
+                name="gamma_d"
+                style="width: 100px;"
+                value="1.35"
+              />
+              <p class="unit">[-]</p>
+            </div>
+            <div class="forms">
+              <p class="definition">d<sub>E,k,1,HC</sub></p>
+              <input
+                type="number"
+                id="dEk1HC"
+                name="dEk1HC"
+                style="width: 100px;"
+                value="2.0"
+                title="total weight (slab + concreted grouts) acc. to producer"
+              />
+              <p class="unit">[kN/m<sup>2</sup>]</p>
+            </div>
+            <div class="forms">
+              <p class="definition">d<sub>E,k,2,HC</sub></p>
+              <input
+                type="number"
+                id="dEk2HC"
+                name="dEk2HC"
+                style="width: 100px;"
+                value="2.0"
+                title="total weight (slab + concreted grouts) acc. to producer"
+              />
+              <p class="unit">[kN/m<sup>2</sup>]</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="drawing"><img src="img/drawing_4.png" alt="Slab_plan" /></div>
+    </div>
+
+    <!-- Results -->
+
+    <div class="container_data">
+      <div class="data">
+        <div class="data-items-wrapper-2">
+          <button id="calculate" class="btn">
+            <span class="calc">
+              <i
+                class="fa fa-calculator"
+                style="font-size:60px;color:#F6801D;"
+              ></i>
+            </span>
+            <span class="calc"> Calculate </span>
+          </button>
+
+          <button id="pdf" class="btn">
+            <span class="calc">
+              <i
+                class="fas fa-file-pdf"
+                style="font-size:40px;color:#000098;"
+              ></i>
+            </span>
+            <span class="calc"> PDF </span>
+          </button>
+
+          <button id="clear_data" class="btn">
+            <span class="calc">
+              <i class="fas fa-trash" style="font-size:40px;color:#000098;"></i>
+            </span>
+            <span class="calc"> Clear data </span>
+          </button>
+        </div>
+      </div>
+
+      <div class="drawing">
+        <div class="data_position">
+          <div class="data-items-wrapper">
+            <div class="description_0">Result</div>
+            <table id="tabletest"></table>
+            <table style="width:100%">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th>Yes/No</th>
+                  <th>Type</th>
+                  <th>Size</th>
+                  <th>Mrd</th>
+                  <th>Utilization</th>
+                  <!-- <th>Comments</th> -->
+                </tr>
+              </thead>
+
+              <tbody id="results-table-content"></tbody>
+            </table>
+
+            <p id="add"></p>
+            <div id="show-results"></div>
+            <div class="placement_position"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--
+<p>Here you are... </p>
+
+
+<div class"my-rectangle"></div>
+<button class="my-rectangle" onclick="change()">my-rectangle</button>
+-->
+
+    <footer class="footer">
+      &#x24B8;
+      <div class="pawel">i_pw</div>
+    </footer>
+  </body>
+</html>

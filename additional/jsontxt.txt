@@ -1,0 +1,38 @@
+jak dasz na górze, to bêdzie to przeczytane na samym pocz¹tku i bêdzie 'w pamiêci'
+jedna rzecz tylko od razu
+jak bêdziesz mia³ tego jsona, to nie modyfikuj niczego w nim przypadkiem
+hê??
+bo jak siê zmieni to póxniej w innych obliczeniach bêdziesz mia³ zmienion¹ wartoœæ
+poczekaj, napiszê ci coœ
+
+var config = {
+ ec: 2.34,
+ load: {
+   10: 3.4,
+   20: 4.5,
+   30: 5.6
+ }
+}
+
+console.log(config.ec)
+
+// tutaj jak masz te 'property' jako numerek, to jak chcesz je przeczytaæ, to musisz daæ w [ ]
+console.log(config.load[10])
+
+// nie rob czasem tak:
+config.ec = 30
+// w sensie mo¿esz, ale wtedy to siê zmieni, normalnie jak masz taki objekt z configiem, to z za³o¿enia on siê nie zmienia
+
+// i potem to co ju¿ masz
+var gamma = getGamma(costam, config.ec)
+
+
+// definicje funkcji mog¹ byæ na samym dole, to jest takie coœ co siê nazywa hoisting (prosta rzecz, ale teraz nie bêdê ci opisywaæ)
+// jak dasz na dole funkcjê, któr¹ stworzysz tak o:
+// function costam () {
+//   costam sie dzieje
+// }
+// to ona spokojnie mo¿e iœæ na dó³, wtedy czytelniej, bo u góry widzisz od razu tak¹ sekwencjê co i jak, a definicje masz pod spodem, jak interesuj¹ ciê szczegó³y
+WEZ TO SOBIE WKLEJ W NOTATNIK
+albo edytor
+to bêdzie siê ³atwiej czytaæ
